@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body {
+    background-color: #06283D;
+}
+h1{
+    text-align: center;
+    font-size: 4rem;
+    color: #DFF6FF;
+}
+#randomMichis{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+}
+
+#randomMichis div {
+    text-align: center;
+    width: 100%;
+}
+#randomMichis #reload{
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border: 0;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #47B5FF;
+}
+#randomMichis #reload img {
+    width: 30px;
+    height: 30px;
+}
+h2{
+    text-align: center;
+    width: 100%;
+    font-size: 2.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #DFF6FF;
+}
+#randomMichis article{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    height: 400px;
+    padding: 5px;
+    margin: 5px;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: #1363DF;
+    border-radius: 10px;
+}
+#randomMichis article img{
+    width: 80%;
+    height: 80%;
+    padding: 10px;
+    object-fit: cover;
+}
+#randomMichis article button{
+    justify-self: flex-end;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #47B5FF;
+    cursor: pointer;
+}
+#randomMichis button img{
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+}
+#uploadingMichi{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%; 
+}
+#uploadingMichi form {
+    width: 90%;
+    margin: 0 auto;
+}
+#uploadingMichi form input {
+    font-size: 1.8rem;
+    color: #DFF6FF;
+}
+#uploadingMichi form button {
+    font-size: 2rem;
+    margin-top: 10px;
+    background-color: #47B5FF;
+    padding: 5px;
+    border: 0;
+    color: #000;
+}
+#favoritesMichis {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+}
+#favoritesMichis article{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    height: 400px;
+    padding: 5px;
+    margin: 5px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    justify-content: center;
+    background-color: #1363DF;
+    border-radius: 10px;
+}
+#favoritesMichis article img{
+    width: 80%;
+    height: 80%;
+    padding: 10px;
+    object-fit: cover;
+}
+#favoritesMichis article button{
+    justify-self: flex-end;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #47B5FF;
+    cursor: pointer;
+}
+#favoritesMichis #quitarMichi{
+    width: 100%;
+    text-align: center;
+}
+@media (min-width: 1200px) {
+    #randomMichis article{
+        width: 35%;
+        height: 500px;
+    }
+    #favoritesMichis article{
+        width: 35%;
+        height: 500px;
+    }
+    #uploadingMichi form {
+        width: 85%;
+        margin: 0 auto;
+    }
+}

@@ -56,14 +56,18 @@ async function loadFavouritesMichis() {
             const article = document.createElement('article');
             const img = document.createElement('img');
             const btn = document.createElement('button');
-            const btnText = document.createTextNode('Quitar de favoritos');
-
+            const btnText = document.createElement('img');
+            const div = document.createElement('div');
+            
+            btnText.src = ('./corazon-como-boton-quitar-simbolo.png');
             btn.appendChild(btnText);
+            div.appendChild(btn);            
             btn.onclick = () => deleteFavouriteMichi(element.id);
             img.src = element.image.url;
             img.width = 150;
+            div.id = 'quitarMichi';
             article.appendChild(img);
-            article.appendChild(btn);
+            article.appendChild(div);
             section.appendChild(article);
         });
     }
