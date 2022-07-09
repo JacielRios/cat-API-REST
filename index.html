@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat api</title>
+</head>
+<body>
+    <h1>CAT API</h1>
+    <section id="randomMichis">
+        <h2>Gatitos aleatorios</h2>
+        <span id="error"></span>
+        <article>
+            <img id="img1" width="150" alt="Imagen aleatoria">
+            <button id="btn1">Guardar en favoritos</button>
+        </article>
+        <article>
+            <img id="img2" width="150" alt="Imagen aleatoria">
+            <button id="btn2">Guardar en favoritos</button>
+        </article>
+        <button onclick="loadRandomMichis()">Recargar</button>
+    </section>
+    <section id="uploadingMichi">
+        <h2>Sube la foto de tu gatito</h2>
+
+        <form id="uploadingForm">
+            <input type="file" id="file" name="file"><br>
+            <button type="button" onclick="uploadMichiPhoto()">
+            Subir foto
+            </button>
+        </form>
+    </section>
+    <section id="favoritesMichis">
+        <h2>Gatitos favoritos</h2>
+
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
