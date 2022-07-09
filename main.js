@@ -65,6 +65,7 @@ async function loadFavouritesMichis() {
             btn.onclick = () => deleteFavouriteMichi(element.id);
             img.src = element.image.url;
             img.width = 150;
+            img.id = 'mainImg';
             div.id = 'quitarMichi';
             article.appendChild(img);
             article.appendChild(div);
